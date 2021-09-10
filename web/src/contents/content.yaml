@@ -1,0 +1,83 @@
+title: nakji - connecting traditional web infrastructure to blockchains—in real-time
+content:
+  navbar:
+    - 
+      name: Medium
+      url: https://nakji.medium.com
+    - 
+      name: Twitter
+      url: https://twitter.com/nakjinetwork
+    - 
+      name: Telegram
+      url: https://t.me/nakjinetwork
+  
+  hero: 
+    header: The answer to getting blockchain data fast and easy from all things Web 3.0 
+    text: NAKJI connects traditional web infrastructure to blockchains seamlessly for data consumers and data producers.
+    buttons: 
+      left: 
+        text: Get Access!
+        url: https://nakji.typeform.com/to/GPd4eabj
+      
+      right: 
+        text: Update Me
+        url: http://eepurl.com/hGpSNL
+
+  richestBlockchain:
+    header: Imagine if the complexities of blockchain data were packaged to your needs.
+    text:
+      - The immutable data structure of blockchain serves as a key property that makes blockchain special. Immutable data is the new gold.
+      - Data availability and speed will be crucial to driving blockchain adoption towards Web 3.0.  As user-facing dApps such as DeFi protocols and NFT platforms become increasingly popular, so does the demand for a robust blockchain data infrastructure such as Nakji.
+
+    advantages:
+      - Crosschain data indexed and queried with ease
+      - Seamless Access to Smart Contract activities across Blockchains
+      - So Fast - Milliseconds in refresh rates
+
+  nakji:
+    text: NAKJI is a transporter of data from	on-chain to off-chain counterparts providing real-time communication between the blockchain and traditional web infrastructures.
+
+  useCases:
+    header: NAKJI Use Cases
+    items:
+      - 
+        image: Math
+        header: Quant Funds
+        text: Quant Funds seek easy access to structured data based off fragmented and complex on-chain/off-chain data to help formulate winning strategies in maximizing returns.
+
+      - 
+        image: Dashboard
+        header: NFT Platforms
+        text: With the dawn of the digital age, Non-Fungible Token (NFT) demand has exploded and so has their underlying platforms' needs to access data in real-time for auctions, gaming and other applications. As the utility of NFT continues to expand, access to datasets will play an increasing role in the NFT metaverse.
+
+      - 
+        image: Infinity
+        header: DEX/DeFi
+        text: Over the past year, Decentralized Exchanges (DEX) and Decentralized Finance (DeFi) have taken the FinTech sector by storm with over USD 75B locked in its ecosystem.  With automated platforms run by smart contracts earning more than USD 100M monthly, feeds to real-time and accurate blockchain data becomes paramount.
+  
+  testimonials:
+    - 
+      text: Nakji is on pace to become a major contributor for the indexing of Web3 data. Access to data is vital infrastructure in the blockchain space - building out the query layer is one of the final frontiers that need to be tackled for a multi-chain universe to reach its impact potential. We are confident that the Nakji team will lower the barrier to entry for projects building in this ecosystem and ultimately increase adoption on the new, decentralized web.
+      author: 
+        name: Kevin McCordic
+        organization: CMS Holdings
+      
+    - 
+      text: Nakji's protocols relay information efficiently, safely, and quickly from blockchain to off-chain, making it one of the industry's most promising big data start-ups and a particularly exciting investment for us. We look forward to working together as we continue to build the decentralized experiences that constitute the next generation of the Web.
+      author: 
+        name: Yat Siu
+        organization: Chairman, Animoca
+  
+  footer:
+    buttons: 
+      - 
+        url: https://nakji.medium.com
+        image: Medium
+
+      - 
+        url: https://twitter.com/nakjinetwork
+        image: Twitter
+      
+      -
+        url: https://t.me/nakjinetwork
+        image: Telegram
