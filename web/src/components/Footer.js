@@ -11,7 +11,7 @@ const Footer = ({ data }) => {
 							{
 								data.buttons.map((button, i) => 
 									<li key={i} className="px-4">
-										<a href={button.url} ariaLabel={button.image}>
+										<a href={button.url} aria-label={button.image}>
 											<img src={images[button.image]} alt={button.image} />
 										</a>
 									</li>
@@ -21,7 +21,7 @@ const Footer = ({ data }) => {
 					</div>
 					<div className="w-1/2 px-4">
 							<div className="brand-footer text-right">
-								<a href="/#" className="inline-block" ariaLabel={"logo"} >
+								<a href="/#" className="inline-block" aria-label="logo" >
 									<img src={images.logo} alt="logo" />
 								</a>
 							</div>

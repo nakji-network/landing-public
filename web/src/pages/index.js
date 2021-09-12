@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import "../css/styles.css"
 import YAMLData from "../contents/content.yaml"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero.js"
@@ -21,10 +20,8 @@ const IndexPage = () => {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest"></link>
-        <script src="../js/swiper-bundle.min.js"></script>
-        <script src="../js/script.js"></script>
       </Helmet>
-      <div class="bg-black-100 overflow-hidden">
+      <div className="overflow-hidden bg-black">
         <Navbar data={YAMLData.content.navbar} />
         <Hero data={YAMLData.content.hero} />
         <RichestBlockchain data={YAMLData.content.richestBlockchain} />

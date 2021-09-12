@@ -1,0 +1,414 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'ArcoPerpetuoPro-SemiBold';
+
+  src: url('../webfonts/ArcoPerpetuoPro-SemiBold.woff') format('woff'),
+        url('../webfonts/ArcoPerpetuoPro-SemiBold.woff2') format('woff2'),
+        url('../webfonts/ArcoPerpetuoPro-SemiBold.svg#ArcoPerpetuoPro-SemiBold') format('svg'),
+        url('../webfonts/ArcoPerpetuoPro-SemiBold.eot'),
+        url('../webfonts/ArcoPerpetuoPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/ArcoPerpetuoPro-SemiBold.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ActionSans-Medium';
+
+  src: url('../webfonts/ActionSans-Medium.woff') format('woff'),
+        url('../webfonts/ActionSans-Medium.woff2') format('woff2'),
+        url('../webfonts/ActionSans-Medium.eot'),
+        url('../webfonts/ActionSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/ActionSans-Medium.otf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ActionSans-Bold';
+
+  src: url('../webfonts/ActionSans-Bold.woff') format('woff'),
+        url('../webfonts/ActionSans-Bold.woff2') format('woff2'),
+        url('../webfonts/ActionSans-Bold.eot'),
+        url('../webfonts/ActionSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/ActionSans-Bold.otf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ArcoPerpetuoPro-Light';
+
+  src: url('../webfonts/ArcoPerpetuoPro-Light.woff') format('woff'),
+        url('../webfonts/ArcoPerpetuoPro-Light.woff2') format('woff2'),
+        url('../webfonts/ArcoPerpetuoPro-Light.svg#ArcoPerpetuoPro-Light') format('svg'),
+        url('../webfonts/ArcoPerpetuoPro-Light.eot'),
+        url('../webfonts/ArcoPerpetuoPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/ArcoPerpetuoPro-Light.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+
+.img-holder {
+  position: relative;
+}
+
+.img-holder img {
+  -webkit-animation: loading-spin 1000s infinite;
+          animation: loading-spin 1000s infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  transform-origin: center center;
+}
+
+.img-holder img {
+  max-width: 1200px;
+  position: absolute;
+  right: -760px;
+  top: -40px;
+}
+
+@-webkit-keyframes loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ellipse-line2,
+.ellipse-line {
+  width: 64px;
+  height: 1px;
+  background-color: #FFAF3F;
+  position: relative;
+}
+
+.ellipse-line2:after,
+.ellipse-line:after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  background: #EB6B38;
+}
+
+.ellipse-line2:after {
+  right: auto;
+  left: 0;
+}
+
+.points li {
+  position: relative;
+}
+
+.points li:after {
+  content: '';
+  height: 32px;
+  width: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+.points li:last-child:after {
+  content: none;
+}
+
+.elipse-center {
+  width: 64px;
+  height: 7px;
+  height: 1px;
+  position: relative;
+}
+
+.elipse-center:after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #121212;
+}
+
+.author {
+  position: relative;
+}
+
+.author:before {
+  content: '';
+}
+.cta-hero li{
+  position: relative;
+}
+
+.cta-hero li:after{
+  content: '';
+  width: 17px;
+  height: 1px;
+  background-color: #FFAF3F;
+  position: absolute;
+  top: 50%;
+  right: -9px;
+  display: inline-block;
+  transform: translate(0,-50%);
+}
+
+.cta-hero li:last-child:after{
+  content: none;
+}
+
+@media(max-width:1199px) {
+  .img-holder img {
+    max-width: 1071px;
+  }
+}
+
+@media(max-width:992px) {
+  .img-holder img {
+    max-width: 1000px;
+  }
+
+  .cta-hero li:after{
+    content: none;
+  }
+}
+
+@media(max-width:767px){
+  .img-holder img {
+    max-width: 100%;
+    position: relative;
+    right: auto;
+    left: auto;
+    top: auto;
+    margin-bottom: -100%;
+  }
+
+  .points li:after{
+    content: none;
+  }
+
+  .card-wrapper .card{
+    position: relative;
+  }
+
+  .card-wrapper .card:after{
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: #ED7039;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+
+  .card-wrapper .card:last-child:after{
+    content: none;
+  }
+}
+
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(18, 18, 18, var(--tw-bg-opacity));
+}
+
+
+  .xs\:bg-orange-primary{
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 175, 63, var(--tw-bg-opacity));
+  }
+
+  .xs\:bg-orange-secondary{
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 112, 57, var(--tw-bg-opacity));
+  }
+
+.bg-orange-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 175, 63, var(--tw-bg-opacity));
+}
+
+.bg-orange-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgba(237, 112, 57, var(--tw-bg-opacity));
+}
+
+
+.bg-gradiant-primary{
+  background-image: linear-gradient(86.45deg, #FFAF3F 0%, #E34F35 134.82%);
+}
+
+.bg-gradiant-secondary{
+  background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 10.42%);
+}
+
+.bg-blockchain{
+  background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 34.9%);
+}
+
+.bg-gradiant-orange{
+  background-image: linear-gradient(211.37deg, #FFAF3F 44.82%, #E34F35 116.55%);
+}
+
+.bg-testimonial{
+  background-image: url(../images/bg-testimonial.png);
+}
+
+.border-orange-primary{
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 175, 63, var(--tw-border-opacity));
+}
+
+.border-orange-secondary{
+  --tw-border-opacity: 1;
+  border-color: rgba(237, 112, 57, var(--tw-border-opacity));
+}
+
+.max-w-content{
+  max-width: 1154px;
+}
+
+
+
+.min-w-40{
+  min-width: 12rem;
+}
+
+
+
+.pt-11{
+  padding-top: 2.375rem;
+}
+
+.pb-11{
+  padding-bottom: 2.375rem;
+}
+
+.pt-15{
+  padding-top: 3.75rem;
+}
+
+
+.mt-21 {
+    margin-top: 5.813rem;
+}
+
+  .md\:bg-blockchain{
+    background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 34.9%);
+  }
+
+.font-ArcoSemi{
+  font-family: ArcoPerpetuoPro-SemiBold;
+}
+
+.font-ArcoLight{
+  font-family: ArcoPerpetuoPro-Light;
+}
+
+.font-ActionMedium{
+  font-family: ActionSans-Medium;
+}
+
+.font-ActionBold{
+  font-family: ActionSans-Bold;
+}
+
+.hover\:text-black-100:hover{
+  --tw-text-opacity: 1;
+  color: rgba(18, 18, 18, var(--tw-text-opacity));
+}
+
+.mb-6\.5 {
+    margin-bottom: 1.625rem;
+}
+
+@media (min-width: 1024px){
+	.md\:text-5xl {
+		font-size: 3rem !important;
+		line-height: 120% !important;
+	}
+
+	.md\:text-4xl {
+		font-size: 2.5rem !important;
+		line-height: 120% !important;
+	}
+  .md\:py-18{
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+.text-3xxl{
+	font-size: 2rem !important;
+	line-height: 120% !important;
+}
+
+@media (min-width: 768px){
+	.sm\:text-4xl {
+		font-size: 2.5rem !important;
+		line-height: 120% !important;
+	}
+
+	.sm\:mb-21 {
+		margin-bottom: 5.813rem;
+	}
+
+	.sm\:pb-18{
+		padding-bottom: 4.5rem;
+	}
+}
+
+@media (min-width: 1200px){
+	.lg\:text-6xl {
+		font-size: 3.75rem !important;
+		line-height: 120% !important;
+	}
+	.lg\:text-2xl {
+		font-size: 1.5rem !important;
+		line-height: 160% !important;
+	}
+}
