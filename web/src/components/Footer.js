@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import images from "../images/images"
 
 const Footer = ({ data }) => {
@@ -21,9 +22,9 @@ const Footer = ({ data }) => {
 					</div>
 					<div className="w-1/2 px-4">
 							<div className="brand-footer text-right">
-								<a href="/#" className="inline-block" aria-label="logo" >
+								<Link to="/#" className="inline-block" aria-label="logo" >
 									<img src={images.logo} alt="logo" />
-								</a>
+								</Link>
 							</div>
 					</div>
 				</div>
